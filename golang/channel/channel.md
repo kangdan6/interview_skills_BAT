@@ -51,6 +51,8 @@ Go编译器通过逃逸分析确定哪些对象分配在堆上，哪些分配在
 3. 什么时候用chan不如mutex效率高？
 一般来说，chan比mutex效率要高，但是在goroutine之间通讯时就不一定了
 
+mutex是典型的保护资源的思路，channel是通过通信来共享内存，有限考虑channel
+
 ### 通常考察select随机执行变成有序执行
 
 
